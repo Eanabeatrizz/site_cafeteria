@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <meta name="description" content="Explore receitas do seu próprio jeito de preparar café">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-div"><img class="logo" src="imagem\coffee-shop.png" alt="logo-cafeteria"></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+            </ul>
+            <a class="github" href="https://github.com/Eanabeatrizz">Github/Ana-Beatriz</a>
+            <a class="github" href="https://github.com/LohanRosa">Github/Lohan</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidade</span>
+                    <h1>Receitas que fazem o coração sorrir</h1>
+                    <hr>
+                    <h2 class="hero-subtitulo">Descubra uma variedade de deliciosas receitas de café.</h2>
+                </header>
+
+                <div class="hero-imagens-container">
+                    <figure><img src="imagem/imagem_1.jpg"></figure>
+                    <figure><img src="imagem/imagem_2.jpg"></figure>
+                    <figure><img src="imagem/imagem_3.jpg"></figure>
+                    <figure><img src="imagem/imagem_4.jpg"></figure>
+                    <figure><img src="imagem/imagem_5.jpg"></figure>
+                    <figure><img src="imagem/imagem_6.jpg"></figure>
+                    <figure><img src="imagem/imagem_cafe.jpg"></figure>
+                    <!-- <figure><img src="imagem/cafe-da-manha.jpg"></figure> -->
+                </div>
+            </section>
+        </div>
+        <section class="receitas">
+            <header class="receitas-cabecalho">
+                <span class="destaque marrom">Receitas</span>
+                <h2 class="receitas-titulo">Confira as últimas receitas</h2>
+                <p class="receitas-subtitulo"></p>Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+            <div class="receitas-card-container">
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">Em Alta</span>
+                            <h3 class="receita-titulo">Cappuccino</h3>
+                        </div>
+                        <p class="receita-avaliacao">Extraordinário - 4/4</p>
+                        <button class="favorite-button">❤</button>
+                    </header>
+                    <p class="receita-descricao">Uma bebida para o inicio da tarde</p>
+                    <div class="receita-autor">
+                        <img src="https://avatars.githubusercontent.com/u/124097186?v=4">
+                        <span class="receita-autor-nome">Lohan Rosa</span>
+                    </div>
+                </div>
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">NOVO</span>
+                            <h3 class="receita-titulo">Cafés gelados</h3>
+                        </div>
+                        <p class="receita-avaliacao">Divertido - 3/4</p>
+                        <button class="favorite-button">❤</button>
+                    </header>
+                    <p class="receita-descricao">Uma bebida para o inicio da noite</p>
+                    <div class="receita-autor">
+                        <img src="imagem/pessoa_1.jpeg">
+                        <span class="receita-autor-nome">Marcos Aurelio</span>
+                    </div>
+                </div>
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">Clássico</span>
+                            <h3 class="receita-titulo">Caipirinha de café</h3>
+                        </div>
+                        <p class="receita-avaliacao">Prazeroso - 3.8/4</p>
+                        <button class="favorite-button">❤</button>
+                    </header>
+                    <p class="receita-descricao">Uma bebida para o meiado da noite do sextou!</p>
+                    <div class="receita-autor">
+                        <img src="imagem/pessoa_3.jpeg">
+                        <span class="receita-autor-nome">Gabriele Petrova</span>
+                    </div>
+                </div>
+                <div class="receitas-card">
+                    <header class="receitas-card-cabecalho">
+                        <div class="receitas-card-cabecalho-detalhes">
+                            <span class="destaque amarelo">Esperado</span>
+                            <h3 class="receita-titulo">Cremoso com chocolate</h3>
+                        </div>
+                        <p class="receita-avaliacao">Delícia - 4/4</p>
+                        <button class="favorite-button">❤</button>
+                    </header>
+                    <p class="receita-descricao">Uma bebida para o inicio da manhã</p>
+                    <div class="receita-autor">
+                        <img src="https://avatars.githubusercontent.com/u/164105871?v=4">
+                        <span class="receita-autor-nome">Ana Beatriz</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="hero">
+            <h2 class="receitas-titulo-formulario">Insira sua receita</h2>
+            <form action="gravador_dados.php" method="post">
+                <p class="receita-avaliacao">Nome da receita: <input type="text" name=""></p>
+                <p class="receita-avaliacao">Ingredientes: <textarea name="Ingredientes" cols="30" rows="4" aria-setsize="15" id=""></textarea></p>
+                <p class="receita-avaliacao">Modo de preparo: <textarea name="modo_de_preparo" id="" cols="30" rows="4"></textarea></p>
+                <label class="receita-avaliacao" for="email">Email para contato:</label>
+                <input type="email" name="" id="">
+                <br>
+                <input  class="receita-avaliacao" type="submit" value="Enviar">
+            </form>
+
+        </section> -->
+    </main>
+
+    <footer>
+        <p class="footer-copy">Copyright &lt;CAFETERIA /&gt; 2024</p>
+        <p class="footer-autor">Feito com dedicação!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

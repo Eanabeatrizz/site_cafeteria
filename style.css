@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Genos:wght@300&family=Teko:wght@600&display=swap');
+
+/*Zerando o css padrão do site*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body para base do fundo do site inteiro*/
+body {
+    background-color: #4e2902;
+    color: #ffffff;
+}
+
+/*fonte das palavras no html*/
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+/*tirando a decoração da hiper ligação tag a e ul*/
+a {
+    text-decoration: none;
+    color: #FFF2E7;
+}
+
+ul {
+    list-style: none;
+    color: #FFF2E7;
+}
+
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20rem;
+    border: 5px solid;
+}
+
+nav {
+    max-width: 2500px;
+    margin: auto;
+    padding: 0.5rem 11rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: var(--Box-Padding, 2.5rem);
+    color: #FFF2E780;
+}
+
+.github {
+    color: #FFF2E7;
+    font-weight: 400;
+    gap: -10rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.principal {
+    background: #8a600540;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.hero {
+    max-width: 1120px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 6rem;
+
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.destaque {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.marrom {
+    color: #A45A49;
+}
+
+.amarelo {
+    color: #E7A80E;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr {
+    width: 240px;
+    height: 2px;
+    border-color: #A45A49;
+}
+
+.hero-subtitulo {
+    color: #c7bab3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.43rem;
+    font-weight: 400;
+}
+
+.hero-imagens-container {
+    max-width: 45%;
+    column-count: 3;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+.hero-imagens-container>figure>img {
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+
+    column-count: 2;
+    max-width: 1120px;
+    padding: 2rem 2rem;
+    margin: auto;
+}
+
+.receitas-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.receitas-titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
+}
+
+.receitas-subtitulo {
+    color: #c7BAB3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receitas-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.receitas-card {
+    background: #241a1c;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas-card-cabecalho-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receita-titulo {
+    color: #FFF2E7;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.receita-avaliacao {
+    color: #756A67;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.receita-descricao {
+    color: #C7BAB3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receita-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.receita-autor>img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.receita-autor-nome {
+    color: #C7BAB3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.favorite-button {
+    color: #ad643d;
+    background-color: #241a1c;
+}
+
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer-copy {
+    color: #FFF2E7;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-autor {
+    color: rgba(255, 242, 231, 0.50);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.principal-main-sobre-nos {
+    background: #8a600540;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.h1-sobre-nos {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.p-sobre-nos {
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 250;
+    gap: 1rem;
+}
+
+.img-lohan {
+    max-width: 15%;
+    column-count: 1;
+    column-gap: 1rem;
+    margin: 2.5rem;
+    width: 100%;
+    border-radius: 1.5rem;
+}
